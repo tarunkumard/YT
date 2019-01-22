@@ -16,21 +16,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
-
 WebUI.navigateToUrl('https://www.ytmonster.net/')
 
-WebUI.click(findTestObject('Object Repository/Page_YTMonster  Free YouTube Views/a_Login'))
+WebUI.click(findTestObject('Object Repository/22jan2019/Page_YTMonster  Free YouTube Views/a_Login'))
 
-WebUI.click(findTestObject('Object Repository/Page_YTMonster  Login/label_Username'))
+WebUI.click(findTestObject('Object Repository/22jan2019/Page_YTMonster  Login/label_Username'))
 
-WebUI.setText(findTestObject('Object Repository/Page_YTMonster  Login/input_Login_usernames'), 'wealthytarundas2015')
+WebUI.setText(findTestObject('Object Repository/22jan2019/Page_YTMonster  Login/input_Login_usernames'), 'wealthytarundas2015')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_YTMonster  Login/input_Username_passwords'), 'NWb4hwkuz3HgDrtaE3i19Q==')
+WebUI.setEncryptedText(findTestObject('Object Repository/22jan2019/Page_YTMonster  Login/input_Username_passwords'), 'NWb4hwkuz3HgDrtaE3i19Q==')
 
-WebUI.click(findTestObject('Object Repository/Page_YTMonster  Login/button_Login'))
+WebUI.click(findTestObject('Object Repository/22jan2019/Page_YTMonster  Login/button_Login'))
 
-WebUI.click(findTestObject('Object Repository/Page_YTMonster  Exchange/div_YouTube Likes'))
+WebUI.click(findTestObject('Object Repository/22jan2019/Page_YTMonster  Exchange/div_YouTube Likes'))
 
-WebUI.click(findTestObject('Object Repository/Page_YTMonster  Exchange/div_Like'))
+WebUI.click(findTestObject('Object Repository/22jan2019/Page_YTMonster  Exchange/div_Like'))
 
