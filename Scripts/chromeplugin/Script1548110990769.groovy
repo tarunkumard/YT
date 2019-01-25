@@ -48,15 +48,15 @@ selenium.type('id=inputPassword', 'Foryoukrsna321')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Password\'])[1]/following::button[1]')
 
-
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Campaigns\'])[1]/following::div[1]')
 
 selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Subscribe to other users channels and earn credits\'])[1]/following::div[7]')
-WebUI.delay(60)
+
+WebUI.delay(10)
 
 WebUI.click(findTestObject('Object Repository/22jan2019/Page_YTMonster  Exchange/div_Like'))
 
-WebUI.delay(60)
+WebUI.delay(10)
 
-
+WebUI.switchToWindowIndex(0)
 
