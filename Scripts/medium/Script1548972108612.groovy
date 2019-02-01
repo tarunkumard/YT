@@ -28,47 +28,41 @@ import java.util.regex.Pattern as Pattern
 import static org.apache.commons.lang3.StringUtils.join
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 
-WebUI.openBrowser('https://www.ytmonster.net/')
-
-def driver = DriverFactory.getWebDriver()
-
-String baseUrl = 'https://www.ytmonster.net/'
-
-selenium = new WebDriverBackedSelenium(driver, baseUrl)
-
-selenium.open('https://www.ytmonster.net/')
+WebUI.openBrowser('https://accounts.google.com')
 
 WebUI.maximizeWindow()
 
-selenium.click('link=Login')
+def driver = DriverFactory.getWebDriver()
 
-selenium.type('id=inputUsername', 'wealthytarundas2015')
+String baseUrl = 'https://accounts.google.com'
 
-WebUI.delay(40)
+selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-selenium.type('id=inputPassword', 'Foryouradha@321')
+selenium.open('https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
 
-selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Password\'])[1]/following::button[1]')
+selenium.type('id=identifierId', 'georgejohn7866')
 
-for (def index : (1..10)) {
-    selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Campaigns\'])[1]/following::div[1]')
+WebUI.delay(5)
 
-    selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Subscribe to other users channels and earn credits\'])[1]/following::div[7]')
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
 
-    WebUI.delay(22)
+WebUI.delay(5)
 
-    WebUI.click(findTestObject('Object Repository/22jan2019/Page_YTMonster  Exchange/div_Like'))
+selenium.type('name=password', 'George@321')
 
-    WebUI.delay(22)
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail/span_Next'))
 
-    WebUI.focus(findTestObject('Page_Surprise Shark Attack - The Me/like'))
+WebUI.delay(5)
 
-    WebUI.click(findTestObject('Page_Surprise Shark Attack - The Me/like'))
+selenium.open('https://medium.com/')
 
-    // selenium.click('xpath=(.//*[normalize-space(text()) and normalize-space(.)=\'Like\'])[1]/following::div[2]')
-    //selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='•'])[2]/following::yt-icon-button[1]")
-    WebUI.switchToWindowIndex(0)
+selenium.click('link=Sign in')
 
-    WebUI.click(findTestObject('Page_YTMonster  Exchange/div_Verify Like'))
-}
+selenium.open('https://medium.com/s/user-friendly/why-im-done-saying-user-user-experience-and-ux-in-2019-4fdfc6b7de23')
+
+WebUI.delay(4)
+
+WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/button_Continue as george'))
+
+WebUI.delay(10)
 
