@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_More_u-block u-backgroundCov</name>
+   <tag></tag>
+   <elementGuidId>fd5ae8c0-4db1-4ba0-88ba-c5fc7d219d5e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='_obv.shell._surface_1548979482987']/div/div[3]/div/div/section/article/div/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>https://medium.com/s/story/a-new-test-predicts-when-youll-die-give-or-take-a-few-years-2d08147c8ea6?source=grid_home---------0------------------18---</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-action</name>
+      <type>Main</type>
+      <value>open-post</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-action-value</name>
+      <type>Main</type>
+      <value>https://medium.com/s/story/a-new-test-predicts-when-youll-die-give-or-take-a-few-years-2d08147c8ea6?source=grid_home---------0------------------18---</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-action-source</name>
+      <type>Main</type>
+      <value>grid_home---------0------------------18---</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-block u-backgroundCover extremeHero-image</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-label</name>
+      <type>Main</type>
+      <value>A New Test Predicts When You’ll Die (Give or Take a Few Years)</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;_obv.shell._surface_1548979482987&quot;)/div[@class=&quot;screenContent surface-content&quot;]/div[@class=&quot;homeContainer u-clearfix js-homepage&quot;]/div[@class=&quot;js-homeStream&quot;]/div[@class=&quot;streamItem streamItem--section js-streamItem&quot;]/section[@class=&quot;extremeHero-container&quot;]/article[@class=&quot;extremeHero-largeCard js-trackPostPresentation uiScale uiScale-ui--small uiScale-caption--small&quot;]/div[@class=&quot;extremeHero-post&quot;]/a[@class=&quot;u-block u-backgroundCover extremeHero-image&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <value>//div[@id='_obv.shell._surface_1548979482987']/div/div[3]/div/div/section/article/div/a</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='More'])[1]/following::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Collections'])[1]/following::a[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='A New Test Predicts When You’ll Die (Give or Take a Few Years)'])[1]/preceding::a[1]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='And insurance companies are already interested'])[1]/preceding::a[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <value>//a[contains(@href, 'https://medium.com/s/story/a-new-test-predicts-when-youll-die-give-or-take-a-few-years-2d08147c8ea6?source=grid_home---------0------------------18---')]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <value>//article/div/a</value>
+   </webElementXpaths>
+</WebElementEntity>

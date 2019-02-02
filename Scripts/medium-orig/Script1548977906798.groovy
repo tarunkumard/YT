@@ -29,5 +29,23 @@ WebUI.setEncryptedText(findTestObject('Page_Gmail/input_Too many failed attempts
 
 WebUI.sendKeys(findTestObject('Page_Gmail/input_Too many failed attempts'), Keys.chord(Keys.ENTER))
 
-WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/button_Continue as george'))
+WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/button_Continue as george (2)'))
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
+
+WebUI.setText(findTestObject('Object Repository/Page_Gmail/input_to continue to Gmail_ide'), 'georgejohn7866')
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_Gmail/input_to continue to Gmail_ide'), Keys.chord(Keys.ENTER))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Gmail/input_Too many failed attempts'), 'wsG2wfbvSaf9ooD1E/D8vQ==')
+
+WebUI.sendKeys(findTestObject('Object Repository/Page_Gmail/input_Too many failed attempts'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/button_Continue as george (2)'))
+
+WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/a_More_u-block u-backgroundCov'))
+
+WebUI.click(findTestObject('clap/button_Jan 23_button button--p'))
 
