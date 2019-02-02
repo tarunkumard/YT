@@ -40,7 +40,7 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 selenium.open('https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
 
-selenium.type('id=identifierId', 'email')
+selenium.type('id=identifierId', 'georgejohn7866')
 
 WebUI.delay(5)
 
@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
 
 WebUI.delay(5)
 
-selenium.type('name=password', 'passwd')
+selenium.type('name=password', 'George@321')
 
 WebUI.click(findTestObject('Page_Gmail/Page_Gmail/span_Next'))
 
@@ -56,28 +56,32 @@ WebUI.delay(5)
 
 selenium.open('https://medium.com/')
 
-selenium.click('link=Sign in')
-
-selenium.open('https://medium.com/s/user-friendly/why-im-done-saying-user-user-experience-and-ux-in-2019-4fdfc6b7de23')
-
-WebUI.delay(4)
-
-WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/button_Continue as george'))
+//selenium.click('link=Sign in')
+selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
 
 WebUI.delay(4)
 
-selenium.open('https://medium.com/')
+WebUI.delay(4)
 
+WebUI.click(findTestObject('Page_Where To Find Pocket friendly/button_Continue as george'))
+
+//selenium.open('https://medium.com/')
 //selenium.open('https://medium.com/s/user-friendly/why-im-done-saying-user-user-experience-and-ux-in-2019-4fdfc6b7de23')
-selenium.open('https://medium.com/s/user-friendly/the-art-of-the-error-message-9f878d0bff80')
+//selenium.open('https://medium.com/s/user-friendly/the-art-of-the-error-message-9f878d0bff80')
+//selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
+WebUI.delay(4)
 
-WebUI.waitForElementClickable(findTestObject('clap/clap'), 5)
+WebUI.click(findTestObject('Page_Where To Find Pocket friendly/button_Continue as george'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(4)
 
-WebUI.scrollToElement(findTestObject('clap/clap'), 0)
+WebUI.waitForElementClickable(findTestObject('clap/johnclap'), 5)
 
-WebUI.focus(findTestObject('clap/clap'))
+WebUI.delay(4)
 
-WebUI.doubleClick(findTestObject('clap/clap'), FailureHandling.STOP_ON_FAILURE)
+WebUI.scrollToElement(findTestObject('clap/johnclap'), 0)
+
+WebUI.focus(findTestObject('clap/johnclap'))
+
+WebUI.click(findTestObject('clap/johnclap'), FailureHandling.STOP_ON_FAILURE)
 
