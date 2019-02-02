@@ -71,8 +71,6 @@ WebUI.click(findTestObject('Page_Where To Find Pocket friendly/button_Continue a
 //selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Where To Find Pocket friendly/button_Continue as george'), FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.delay(4)
 
 WebUI.waitForElementClickable(findTestObject('clap/johnclap'), 5)
@@ -83,5 +81,5 @@ WebUI.scrollToElement(findTestObject('clap/johnclap'), 0)
 
 WebUI.focus(findTestObject('clap/johnclap'))
 
-WebUI.click(findTestObject('clap/johnclap'), FailureHandling.STOP_ON_FAILURE)
+WebUI.doubleClick(findTestObject('clap/johnclap'), FailureHandling.STOP_ON_FAILURE)
 

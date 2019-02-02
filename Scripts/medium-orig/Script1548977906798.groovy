@@ -1,51 +1,94 @@
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.checkpoint.CheckpointFactory as CheckpointFactory
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as MobileBuiltInKeywords
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testcase.TestCaseFactory as TestCaseFactory
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testdata.TestDataFactory as TestDataFactory
+import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WSBuiltInKeywords
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
+import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.thoughtworks.selenium.Selenium as Selenium
+import org.openqa.selenium.firefox.FirefoxDriver as FirefoxDriver
+import org.openqa.selenium.WebDriver as WebDriver
+import com.thoughtworks.selenium.webdriven.WebDriverBackedSelenium as WebDriverBackedSelenium
+import java.util.regex.Pattern as Pattern
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import internal.GlobalVariable as GlobalVariable
+import static org.junit.Assert.*
+import static org.apache.commons.lang3.StringUtils.join
 
-WebUI.openBrowser('')
+WebUI.openBrowser('https://accounts.google.com')
 
-WebUI.navigateToUrl('https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
+WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Page_Gmail/input_to continue to Gmail_ide'), 'georgejohn7866')
+def driver = DriverFactory.getWebDriver()
 
-WebUI.sendKeys(findTestObject('Page_Gmail/input_to continue to Gmail_ide'), Keys.chord(Keys.ENTER))
+String baseUrl = 'https://accounts.google.com'
 
-WebUI.setEncryptedText(findTestObject('Page_Gmail/input_Too many failed attempts'), 'sDnHzfgLdlicMeG8UcziLw==')
+selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
-WebUI.sendKeys(findTestObject('Page_Gmail/input_Too many failed attempts'), Keys.chord(Keys.ENTER))
+selenium.open('https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
 
-WebUI.setEncryptedText(findTestObject('Page_Gmail/input_Too many failed attempts'), 'wsG2wfbvSaf9ooD1E/D8vQ==')
+selenium.type('id=identifierId', 'georgejohn7866')
 
-WebUI.sendKeys(findTestObject('Page_Gmail/input_Too many failed attempts'), Keys.chord(Keys.ENTER))
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/button_Continue as george (2)'))
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
 
-WebUI.openBrowser('')
+WebUI.delay(5)
 
-WebUI.navigateToUrl('https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
+selenium.type('name=password', 'George@321')
 
-WebUI.setText(findTestObject('Object Repository/Page_Gmail/input_to continue to Gmail_ide'), 'georgejohn7866')
+WebUI.click(findTestObject('Page_Gmail/Page_Gmail/span_Next'))
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Gmail/input_to continue to Gmail_ide'), Keys.chord(Keys.ENTER))
+WebUI.delay(5)
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Gmail/input_Too many failed attempts'), 'wsG2wfbvSaf9ooD1E/D8vQ==')
+selenium.open('https://medium.com/')
 
-WebUI.sendKeys(findTestObject('Object Repository/Page_Gmail/input_Too many failed attempts'), Keys.chord(Keys.ENTER))
+//selenium.click('link=Sign in')
+selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
 
-WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/button_Continue as george (2)'))
+WebUI.delay(4)
 
-WebUI.click(findTestObject('Object Repository/Page_Medium  a place to read and wr/a_More_u-block u-backgroundCov'))
+WebUI.delay(4)
 
-WebUI.click(findTestObject('clap/button_Jan 23_button button--p'))
+WebUI.click(findTestObject('Page_Where To Find Pocket friendly/button_Continue as george'))
+
+//selenium.open('https://medium.com/')
+//selenium.open('https://medium.com/s/user-friendly/why-im-done-saying-user-user-experience-and-ux-in-2019-4fdfc6b7de23')
+//selenium.open('https://medium.com/s/user-friendly/the-art-of-the-error-message-9f878d0bff80')
+//selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
+WebUI.delay(4)
+
+WebUI.delay(4)
+
+WebUI.waitForElementClickable(findTestObject('clap/johnclap'), 5)
+
+WebUI.delay(4)
+
+WebUI.scrollToElement(findTestObject('clap/johnclap'), 0)
+
+WebUI.focus(findTestObject('clap/johnclap'))
+
+WebUI.delay(4)
+
+for (def index : (1..10)) {
+	WebUI.delay(8)
+	selenium.click('css=g > path')
+}
+
+//selenium.click("css=button.button.button--large.button--dark.button--chromeless.is-touchIconFadeInPulse.u-baseColor--buttonDark.button--withIcon.button--withSvgIcon.button--bookmark.js-bookmarkButton.is-touched > span.button-defaultState > span.svgIcon.svgIcon--bookmark.svgIcon--29px > svg.svgIcon-use")
+//selenium.click("css=span.svgIcon.svgIcon--clapFilled.svgIcon--29px > svg.svgIcon-use")
+
 
