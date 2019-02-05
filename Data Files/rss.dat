@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>rss</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>cef13eb1-ad43-4c3b-b547-9d3ba202493c</dataFileGUID>
+   <dataSourceUrl></dataSourceUrl>
+   <driver>InternalData</driver>
+   <data>http%3A%2F%2Fimaslave4u.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Fworldboutiques.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fkawaiigirlsnavi99.tumblr.com%2Frss</data>
+   <internalDataColumns>
+      <columnIndex>0</columnIndex>
+      <name>rss</name>
+      <size>3</size>
+   </internalDataColumns>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName></sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>
