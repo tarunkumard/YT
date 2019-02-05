@@ -40,7 +40,10 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 selenium.open('https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
 
-selenium.type('id=identifierId', 'georgejohn7866')
+//selenium.type('id=identifierId', 'georgejohn7866')
+selenium.type('id=identifierId', 'maddyvicki4ty')
+//selenium.type('id=identifierId', 'marlynmonid6y')
+	
 
 WebUI.delay(5)
 
@@ -48,7 +51,9 @@ WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
 
 WebUI.delay(5)
 
-selenium.type('name=password', 'George@321')
+//selenium.type('name=password', 'George@321')
+selenium.type('name=password', 'Maddy@321')
+//selenium.type('name=password', 'Monid@321')
 
 WebUI.click(findTestObject('Page_Gmail/Page_Gmail/span_Next'))
 
@@ -57,7 +62,9 @@ WebUI.delay(5)
 selenium.open('https://medium.com/')
 
 //selenium.click('link=Sign in')
-selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
+//selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
+selenium.open('https://medium.com/@toulugary786/how-to-do-effective-devops-load-testing-using-cheap-cloud-load-testing-performance-testing-tools-8b04f80660bc')
+
 
 WebUI.delay(4)
 
@@ -73,19 +80,29 @@ WebUI.delay(4)
 
 WebUI.delay(4)
 
-WebUI.waitForElementClickable(findTestObject('clap/johnclap'), 5)
+//WebUI.waitForElementClickable(findTestObject('clap/johnclap'), 5)
 
 WebUI.delay(4)
 
-WebUI.scrollToElement(findTestObject('clap/johnclap'), 0)
+//WebUI.scrollToElement(findTestObject('clap/johnclap'), 0)
 
-WebUI.focus(findTestObject('clap/johnclap'))
+//WebUI.focus(findTestObject('clap/johnclap'))
 
 WebUI.delay(4)
 
-for (def index : (1..10)) {
+//selenium.click('css=g > path')
+
+
+for (def index : (1..50)) {
 	WebUI.delay(8)
-	selenium.click('css=g > path')
+	//selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Open Source'])[1]/following::button[1]")
+	//selenium.click('css=g > path')
+	//above for gerogejohn7866
+	//selenium.click("css=span.svgIcon.svgIcon--clapFilled.svgIcon--33px.u-relative.u-topNegative2.u-xs-top0 > svg.svgIcon-use")
+	selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Open Source'])[1]/following::button[1]")
+	//above for maddyvicki4ty
+	//selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Water Damage Restoration'])[1]/following::button[1]")
+	//above for marlynmonid6y
 }
 
 //selenium.click("css=button.button.button--large.button--dark.button--chromeless.is-touchIconFadeInPulse.u-baseColor--buttonDark.button--withIcon.button--withSvgIcon.button--bookmark.js-bookmarkButton.is-touched > span.button-defaultState > span.svgIcon.svgIcon--bookmark.svgIcon--29px > svg.svgIcon-use")
