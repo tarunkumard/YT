@@ -8,9 +8,9 @@
    <dataFileGUID>cef13eb1-ad43-4c3b-b547-9d3ba202493c</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>http%3A%2F%2Fimaslave4u.tumblr.com%2Frss</data>
-   <data>http%3A%2F%2Fworldboutiques.tumblr.com%2Frss</data>
-   <data>https%3A%2F%2Fkawaiigirlsnavi99.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Fjetsetter-life.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fmeidenkwijlen.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Fwww.mslovejoy.com%2Frss</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>rss</name>

@@ -41,9 +41,9 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 
 selenium.open('https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
 
-selenium.type('id=identifierId', 'georgejohn7866')
+//selenium.type('id=identifierId', 'georgejohn7866')
 
-//selenium.type('id=identifierId', 'maddyvicki4ty')
+selenium.type('id=identifierId', 'maddyvicki4ty')
 //selenium.type('id=identifierId', 'marlynmonid6y')
 WebUI.delay(5)
 
@@ -51,14 +51,14 @@ WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
 
 WebUI.delay(5)
 
-selenium.type('name=password', 'George@321')
+//selenium.type('name=password', 'George@321')
 
-//selenium.type('name=password', 'Maddy@321')
+selenium.type('name=password', 'Maddy@321')
 //selenium.type('name=password', 'Monid@321')
 WebUI.click(findTestObject('Page_Gmail/Page_Gmail/span_Next'))
 
 WebUI.delay(5)
-for (def index : (1..3)) {
+
 
 selenium.open('https://ifttt.com/login?wp_=1')
 
@@ -70,10 +70,11 @@ WebUI.click(findTestObject('Object Repository/Page_Sign in to your IFTTT account
 
 WebUI.delay(5)
 
-
+for (def index : (1..3)) {
 	WebUI.click(findTestObject('Object Repository/Page_Discover IFTTT and Applets - I/span_georgejohn7866'))
 	
 	WebUI.delay(5)
+	
 	
 	
 	WebUI.click(findTestObject('Object Repository/Page_Discover IFTTT and Applets - I/a_New Applet'))
@@ -150,6 +151,9 @@ WebUI.delay(5)
 	WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/input_works with_btn btn-prima'))
 	
 	WebUI.delay(5)
+	selenium.open('https://ifttt.com/create')
+	WebUI.delay(5)
+	
 }
 
 
