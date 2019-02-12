@@ -43,8 +43,9 @@ selenium.open('https://accounts.google.com/signin/v2/identifier?passive=1209600&
 
 //selenium.type('id=identifierId', 'georgejohn7866')
 
-selenium.type('id=identifierId', 'maddyvicki4ty')
+//selenium.type('id=identifierId', 'maddyvicki4ty')
 //selenium.type('id=identifierId', 'marlynmonid6y')
+selenium.type('id=identifierId', 'petersonnancy4563')
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
@@ -52,8 +53,8 @@ WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
 WebUI.delay(5)
 
 //selenium.type('name=password', 'George@321')
-
-selenium.type('name=password', 'Maddy@321')
+selenium.type('name=password', 'Peterson@321')
+//selenium.type('name=password', 'Maddy@321')
 //selenium.type('name=password', 'Monid@321')
 WebUI.click(findTestObject('Page_Gmail/Page_Gmail/span_Next'))
 
@@ -70,7 +71,7 @@ WebUI.click(findTestObject('Object Repository/Page_Sign in to your IFTTT account
 
 WebUI.delay(5)
 
-for (def index : (1..3)) {
+for (def index : (1..21)) {
 	WebUI.click(findTestObject('Object Repository/Page_Discover IFTTT and Applets - I/span_georgejohn7866'))
 	
 	WebUI.delay(5)
@@ -125,6 +126,7 @@ for (def index : (1..3)) {
 	WebUI.delay(5)
 	
 	WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_a hrefhttpsamzn.to2CH'), '<a href="https://amzn.to/2CH5dsg">Buy Best Women\'s Intimates</a>')
+	//WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_a hrefhttpsamzn.to2CH'), '<a href="http://www.nat4trck5.com/aff_c?offer_id=16520&aff_id=16818">I am Bored,send me message,my id here is cute_angel2k19</a>')
 	
 	WebUI.delay(5)
 	
@@ -140,7 +142,7 @@ for (def index : (1..3)) {
 	
 	WebUI.delay(5)
 	
-	WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_foodcakedessertpastri'), 'food,cake,dessert,pastries,intersectional feminism,feminist,my hero academia,all might,lingerie,babe,sexy,babes,kakagai,halloween,horror,gold,gold flakes,nutrition,chocolate,cute,fitness,athletic,summer,fruit by the foot,fruit snacks')
+	WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_foodcakedessertpastri'), 'food,cake,dessert,pastries,intersectional feminism,feminist,my hero academia,all might,lingerie,babe,sexy,babes,kakagai,halloween,horror,gold,gold flakes,nutrition,chocolate,cute,fitness,athletic,summer,fruit by the foot,fruit snacks,hot,bikini,fashion')
 	
 	WebUI.delay(5)
 	

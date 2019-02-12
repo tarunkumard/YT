@@ -8,13 +8,31 @@
    <dataFileGUID>cef13eb1-ad43-4c3b-b547-9d3ba202493c</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
-   <data>http%3A%2F%2Fjetsetter-life.tumblr.com%2Frss</data>
-   <data>https%3A%2F%2Fmeidenkwijlen.tumblr.com%2Frss</data>
-   <data>http%3A%2F%2Fwww.mslovejoy.com%2Frss</data>
+   <data>https%3A%2F%2Fannafaith-lexiegrace.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Flivefastdyung.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fsome-celebrity-stuffs.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Flalunaking.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fcurlyheadsi.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fibelongtome.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fevangelina54wein8.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Fyelkovankuslarininizinde.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Fdjinnjade.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Fburntpink.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fdianaq32ga1a.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Ffashionavenyc.us%2Frss</data>
+   <data>https%3A%2F%2Faltmodelgirlcrush2.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fomg-shes-so-beautiful.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fsurfing-girls.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fancilla-tilia-daily.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Fheatsearch.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Felashirymimi.tumblr.com%2Frss</data>
+   <data>http%3A%2F%2Fcrheintz.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fswimsuitsornothing.tumblr.com%2Frss</data>
+   <data>https%3A%2F%2Fvibrantbikini.tumblr.com%2Frss</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>rss</name>
-      <size>3</size>
+      <size>21</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>
