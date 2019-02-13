@@ -45,7 +45,9 @@ selenium.open('https://accounts.google.com/signin/v2/identifier?passive=1209600&
 
 //selenium.type('id=identifierId', 'maddyvicki4ty')
 //selenium.type('id=identifierId', 'marlynmonid6y')
-selenium.type('id=identifierId', 'petersonnancy4563')
+//selenium.type('id=identifierId', 'petersonnancy4563')
+selenium.type('id=identifierId', 'maverickchrist345')
+
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
@@ -53,7 +55,8 @@ WebUI.click(findTestObject('Page_Gmail/Page_Gmail/content_Next'))
 WebUI.delay(5)
 
 //selenium.type('name=password', 'George@321')
-selenium.type('name=password', 'Peterson@321')
+//selenium.type('name=password', 'Peterson@321')
+selenium.type('name=password', 'Maverick@321')
 //selenium.type('name=password', 'Maddy@321')
 //selenium.type('name=password', 'Monid@321')
 WebUI.click(findTestObject('Page_Gmail/Page_Gmail/span_Next'))

@@ -16,51 +16,36 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
+WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Page_Gmail/input_to continue to Gmail_ide'), 'Georgejohn7866')
+WebUI.navigateToUrl('https://www.youtube.com/')
 
-WebUI.sendKeys(findTestObject('Page_Gmail/input_to continue to Gmail_ide'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Object Repository/Page_YouTube/yt-formatted-string_Sign in'))
 
-WebUI.setEncryptedText(findTestObject('Page_Gmail/input_Too many failed attempts'), 'wsG2wfbvSaf9ooD1E/D8vQ==')
+WebUI.setText(findTestObject('Object Repository/Page_YouTube/input_to continue to YouTube_i'), 'meghanharry653@gmail.com')
 
-WebUI.sendKeys(findTestObject('Page_Gmail/input_Too many failed attempts'), Keys.chord(Keys.ENTER))
+WebUI.delay(4)
 
-WebUI.switchToWindowTitle('ifttt - Google Search')
+WebUI.waitForElementClickable(findTestObject('Page_YouTube/div_Learn more_ZFr60d CeoRYc'), 5)
 
-WebUI.click(findTestObject('Page_ifttt - Google Search/a_Sign in'))
+WebUI.doubleClick(findTestObject('Page_YouTube/div_Learn more_ZFr60d CeoRYc'))
 
-WebUI.click(findTestObject('Page_Sign in to your IFTTT account /a_Continue with Google'))
+//WebUI.navigateToUrl('https://www.youtube.com/watch?v=GAIli8yxomo')
+WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Discover IFTTT and Applets - I/span_georgejohn7866'))
+WebUI.setText(findTestObject('Page_YouTube/input_Too many failed attempts'), 'Meghan@321')
 
-WebUI.click(findTestObject('Page_Discover IFTTT and Applets - I/a_New Applet'))
+WebUI.waitForElementClickable(findTestObject('Page_YouTube/span_Next'), 5)
 
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/a_this (1)'))
+WebUI.doubleClick(findTestObject('Page_YouTube/span_Next'))
 
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/img (1)'))
+WebUI.navigateToUrl('https://www.youtube.com/watch?v=GAIli8yxomo')
 
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/span_This Trigger fires every (1)'))
+WebUI.delay(4)
+WebUI.click(findTestObject('Object Repository/Page_YouTube/yt-formatted-string_Sign in'))
+WebUI.delay(4)
 
-WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_httpcirilee.tumblr.co'), 'http://cirilee.tumblr.com/rss')
+WebUI.click(findTestObject('Object Repository/Page_Where To Find Reliable Mold Re/video_Search_video-stream html'))
 
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/input_visit the help page_btn'))
-
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/span_'))
-
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/img_1'))
-
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/span_Create a photo post'))
-
-WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_Photo caption_fieldsc'), '')
-
-WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_a hrefhttpsamzn.to2CH'), '<a href="https://amzn.to/2CH5dsg">Buy Best Women\'s Intimates</a>')
-
-WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_Tags_fieldstags'), '')
-
-WebUI.setText(findTestObject('Object Repository/Page_Make an Applet - IFTTT/textarea_foodcakedessertpastri'), 'food,cake,dessert,pastries,intersectional feminism,feminist,my hero academia,all might,lingerie,babe,sexy,babes,kakagai,halloween,horror,gold,gold flakes,nutrition,chocolate,cute,fitness,athletic,summer,fruit by the foot,fruit snacks')
-
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/input_Publish_btn btn-on-color'))
-
-WebUI.click(findTestObject('Object Repository/Page_Make an Applet - IFTTT/input_works with_btn btn-prima'))
+WebUI.click(findTestObject('Object Repository/Page_Where To Find Reliable Mold Re/yt-icon__style-scope ytd-toggl'))
 

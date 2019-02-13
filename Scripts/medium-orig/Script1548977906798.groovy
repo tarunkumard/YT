@@ -41,7 +41,8 @@ selenium = new WebDriverBackedSelenium(driver, baseUrl)
 selenium.open('https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount&flowName=GlifWebSignIn&flowEntry=ServiceLogin')
 
 //selenium.type('id=identifierId', 'georgejohn7866')
-selenium.type('id=identifierId', 'petersonnancy4563')
+//selenium.type('id=identifierId', 'petersonnancy4563')
+selenium.type('id=identifierId', 'maverickchrist345')
 //selenium.type('id=identifierId', 'nathan786ongo@gmail.com')
 //selenium.type('id=identifierId', 'michaeltrump786786@gmail.com')
 //selenium.type('id=identifierId', 'marlynmonid6y')
@@ -56,7 +57,8 @@ WebUI.delay(5)
 
 		
 //selenium.type('name=password', 'George@321')
-selenium.type('name=password', 'Peterson@321')
+//selenium.type('name=password', 'Peterson@321')
+selenium.type('name=password', 'Maverick@321')
 //selenium.type('name=password', 'Nathan@321')
 //selenium.type('name=password', 'Monid@321')
 //selenium.type('name=password', 'Trump@321')
@@ -70,8 +72,8 @@ WebUI.delay(5)
 selenium.open('https://medium.com/')
 
 //selenium.click('link=Sign in')
-selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
-//selenium.open('https://medium.com/@michaeltrump786786/what-are-the-rarely-disclosed-diy-water-damage-restoration-and-mold-remediation-tips-for-bellevue-90be2c098d70')
+//selenium.open('https://medium.com/@maverickchrist345/where-to-find-pocket-friendly-mold-removal-diy-bellevue-renton-seattle-ab19afb31448')
+selenium.open('https://medium.com/@michaeltrump786786/what-are-the-rarely-disclosed-diy-water-damage-restoration-and-mold-remediation-tips-for-bellevue-90be2c098d70')
 //selenium.open('https://medium.com/@toulugary786/how-to-do-effective-devops-load-testing-using-cheap-cloud-load-testing-performance-testing-tools-8b04f80660bc')
 
 
@@ -112,6 +114,7 @@ for (def index : (1..50)) {
 	//above for maddyvicki4ty
 	selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Water Damage Restoration'])[1]/following::button[1]")
 	//above for marlynmonid6y
+	//selenium.click("xpath=(.//*[normalize-space(text()) and normalize-space(.)='Water Damage Restoration'])[1]/following::button[2]")
 }
 
 //selenium.click("css=button.button.button--large.button--dark.button--chromeless.is-touchIconFadeInPulse.u-baseColor--buttonDark.button--withIcon.button--withSvgIcon.button--bookmark.js-bookmarkButton.is-touched > span.button-defaultState > span.svgIcon.svgIcon--bookmark.svgIcon--29px > svg.svgIcon-use")
