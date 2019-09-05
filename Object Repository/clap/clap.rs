@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Marina Posniak'])[1]/following::button[1]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Weight Loss Program'])[1]/following::button[1]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
